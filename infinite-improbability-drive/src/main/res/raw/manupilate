@@ -1,0 +1,11 @@
+const content = "<div style=\"width:100%; height:5%; text-align: center;\"> \
+                    <button type=\"button\" style=\"font-size : 30px; width:30%; height:100%; background-color: #e5eb34\" onclick=\"Android.addSmallStar();\">Small Star</button> \
+                    <button type=\"button\" style=\"font-size : 30px; width:30%; height:100%;background-color: #e5eb34\" onclick=\"Android.addBigStar();\">Big Star</button> \
+                    <button type=\"button\" style=\"font-size : 30px; width:30%; height:100%; background-color: #e5eb34\" onclick=\"Android.reset();\">Reset</button> \
+                 </div>";
+
+function appendContentToBody(content) {
+    document.getElementsByTagName('body')[0].innerHTML = document.getElementsByTagName('body')[0].innerHTML + content;
+}
+
+appendContentToBody(content);
